@@ -24,7 +24,7 @@ function Header() {
                 className="search-field"
                 data-search-field
               />
-              <span className="m-icon">search</span>
+              <span className="m-icon leading-icon">search</span>
               <button
                 className="icon-btn leading-icon has-state"
                 aria-label="close search"
