@@ -1,4 +1,3 @@
-import React from "react";
 
 export const weekDayNames = [
   "Sunday",
@@ -106,8 +105,3 @@ export const aqiText = {
   },
 };
 
-const Module = () => {
-  return <div></div>;
-};
-
-export default Module;

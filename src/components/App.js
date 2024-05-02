@@ -1,11 +1,21 @@
-import React from 'react'
+import { fetchData, url } from "./Api.js";
+import * as module from "./Module.js";
 
-const App = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+/**
+ *
+ * @param {NodeList} elements
+ * @param {string} eventType
+ * @param {Function} callback
+ */
 
-export default App
+const addEventOnElements = function (elements, eventType, callback) {
+  for (const element of elements) element.addEventListener(eventType, callback);
+};
+
+const searchView = document.querySelector("[data-search-view]");
+const searchTogglers = document.querySelectorAll("[data-search-togglers]");
+
+const toggleSearch = () => {
+  searchView.classList.toggle("active");
+  addEventOnElements(searchTogglers, "click", toggleSearch);
+};

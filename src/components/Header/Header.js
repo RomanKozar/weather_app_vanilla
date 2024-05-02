@@ -15,7 +15,7 @@ function Header() {
             <img src={logo} width={364} height={58} alt="logo" />
           </div>
           <div className="search-view" data-search-view>
-            <div className="search-wrapper">
+            <div className="search-wrapper active">
               <input
                 type="search"
                 name="search"

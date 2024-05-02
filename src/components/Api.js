@@ -1,4 +1,3 @@
-import React from "react";
 
 const api_key = "6641537634a36928950ce352fa6a464c";
 
@@ -35,8 +34,3 @@ export const url = {
   },
 };
 
-const Api = () => {
-  return <div></div>;
-};
-
-export default Api;
